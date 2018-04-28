@@ -75,7 +75,7 @@ Run
 to set your account's default identity.
 Omit --global to set the identity only in this repository.
 
-fatal: unable to auto-detect email address (got 'Administrator@BWU2Q7MZVD56G6V.(                                                                                                                none)')
+fatal: unable to auto-detect email address (got 'Administrator@BWU2Q7MZVD56G6V.(none)')
 
 Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
 $ git config --global user.email "jiaxingseng_wzz@sina.com"
@@ -321,9 +321,9 @@ Commit message options
                           reuse and edit message from specified commit
     -C, --reuse-message <commit>
                           reuse message from specified commit
-    --fixup <commit>      use autosquash formatted message to fixup specified co                                                                                                                mmit
-    --squash <commit>     use autosquash formatted message to squash specified c                                                                                                                ommit
-    --reset-author        the commit is authored by me now (used with -C/-c/--am                                                                                                                end)
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--am end)
     -s, --signoff         add Signed-off-by:
     -t, --template <file>
                           use specified template file
@@ -349,7 +349,7 @@ Commit contents options
     --amend               amend previous commit
     --no-post-rewrite     bypass post-rewrite hook
     -u, --untracked-files[=<mode>]
-                          show untracked files, optional modes: all, normal, no.                                                                                                                 (Default: all)
+                          show untracked files, optional modes: all, normal, no.   (Default: all)
 
 
 Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
@@ -604,7 +604,7 @@ $ git push -u origin master
 The authenticity of host 'github.com (13.250.177.223)' can't be established.
 RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
 Are you sure you want to continue connecting (yes/no)? yes
-Warning: Permanently added 'github.com,13.250.177.223' (RSA) to the list of kno                                                                                                                 wn hosts.
+Warning: Permanently added 'github.com,13.250.177.223' (RSA) to the list of known hosts.
 fatal: remote error:
   michaelliao/kuma258/learngit is not a valid repository name
   Email support@github.com for help
@@ -624,7 +624,7 @@ $ git remote add origin git@github.com:kuma258/learngit.git
 
 Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
 $ git push -u origin master
-Warning: Permanently added the RSA host key for IP address '13.229.188.59' to t                                                                                                                 he list of known hosts.
+Warning: Permanently added the RSA host key for IP address '13.229.188.59' to the list of known hosts.
 Counting objects: 18, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (15/15), done.
