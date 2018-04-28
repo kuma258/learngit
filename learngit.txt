@@ -1,0 +1,636 @@
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~
+$ git add readme.txt
+fatal: Not a git repository (or any of the parent directories): .git
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~
+$ pwd
+/c/Users/Administrator
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~
+$ cd learngit
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit
+$ git add readme.txt
+fatal: Not a git repository (or any of the parent directories): .git
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit
+$ pwd
+/c/Users/Administrator/learngit
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit
+$ git add readme.txt
+fatal: Not a git repository (or any of the parent directories): .git
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit
+$ git commit -m"wrote a readme file"
+fatal: Not a git repository (or any of the parent directories): .git
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit
+$ git add readme
+fatal: Not a git repository (or any of the parent directories): .git
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit
+$ git add hello.txt
+fatal: Not a git repository (or any of the parent directories): .git
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit
+$ git init
+Initialized empty Git repository in C:/Users/Administrator/learngit/.git/
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git ststus
+git: 'ststus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        hello.txt
+        readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git add readme.txt
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git commit -m "wrote a readme file"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Administrator@BWU2Q7MZVD56G6V.(                                                                                                                none)')
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git config --global user.email "jiaxingseng_wzz@sina.com"
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git config --global user.name "kuma258"
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ ^C
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git commit -m "wrote a readme file"
+[master (root-commit) 610bc8a] wrote a readme file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 readme.txt
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git add python.txt hello.txt
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git commit -m "add 2 files"
+[master 0d684e7] add 2 files
+ 2 files changed, 2 insertions(+)
+ create mode 100644 hello.txt
+ create mode 100644 python.txt
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git diff readme.txt
+diff --git a/readme.txt b/readme.txt
+index d8036c1..013b5bc 100644
+--- a/readme.txt
++++ b/readme.txt
+@@ -1,2 +1,2 @@
+-Git is a version control system.
++Git is a distributed version control system.
+ Git is free software.
+\ No newline at end of file
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git commit -m "add distributed"
+On branch master
+Changes not staged for commit:
+        modified:   readme.txt
+
+no changes added to commit
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git add readme.txt
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   readme.txt
+
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git commit -m "add distributed"
+[master 020dd4b] add distributed
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git log
+commit 020dd4b30c00c2ebc95a623b5f6a4b5a77aa95c7 (HEAD -> master)
+Author: kuma258 <jiaxingseng_wzz@sina.com>
+Date:   Sat Apr 28 11:22:37 2018 +0800
+
+    add distributed
+
+commit 0d684e769d83d5f9c7fde82e802f343622ad67b7
+Author: kuma258 <jiaxingseng_wzz@sina.com>
+Date:   Sat Apr 28 11:14:14 2018 +0800
+
+    add 2 files
+
+commit 610bc8a06bc8ad1e405bf428f0cbfe076a5a7464
+Author: kuma258 <jiaxingseng_wzz@sina.com>
+Date:   Sat Apr 28 11:11:30 2018 +0800
+
+    wrote a readme file
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git log --pretty=oneline
+020dd4b30c00c2ebc95a623b5f6a4b5a77aa95c7 (HEAD -> master) add distributed
+0d684e769d83d5f9c7fde82e802f343622ad67b7 add 2 files
+610bc8a06bc8ad1e405bf428f0cbfe076a5a7464 wrote a readme file
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git reset --hard HEAD^
+HEAD is now at 0d684e7 add 2 files
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git log
+commit 0d684e769d83d5f9c7fde82e802f343622ad67b7 (HEAD -> master)
+Author: kuma258 <jiaxingseng_wzz@sina.com>
+Date:   Sat Apr 28 11:14:14 2018 +0800
+
+    add 2 files
+
+commit 610bc8a06bc8ad1e405bf428f0cbfe076a5a7464
+Author: kuma258 <jiaxingseng_wzz@sina.com>
+Date:   Sat Apr 28 11:11:30 2018 +0800
+
+    wrote a readme file
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git reset --hard  020dd4b
+HEAD is now at 020dd4b add distributed
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git log
+commit 020dd4b30c00c2ebc95a623b5f6a4b5a77aa95c7 (HEAD -> master)
+Author: kuma258 <jiaxingseng_wzz@sina.com>
+Date:   Sat Apr 28 11:22:37 2018 +0800
+
+    add distributed
+
+commit 0d684e769d83d5f9c7fde82e802f343622ad67b7
+Author: kuma258 <jiaxingseng_wzz@sina.com>
+Date:   Sat Apr 28 11:14:14 2018 +0800
+
+    add 2 files
+
+commit 610bc8a06bc8ad1e405bf428f0cbfe076a5a7464
+Author: kuma258 <jiaxingseng_wzz@sina.com>
+Date:   Sat Apr 28 11:11:30 2018 +0800
+
+    wrote a readme file
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git reflog
+020dd4b (HEAD -> master) HEAD@{0}: reset: moving to 020dd4b
+0d684e7 HEAD@{1}: reset: moving to HEAD^
+020dd4b (HEAD -> master) HEAD@{2}: commit: add distributed
+0d684e7 HEAD@{3}: commit: add 2 files
+610bc8a HEAD@{4}: commit (initial): wrote a readme file
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    python.txt
+        modified:   readme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        LICENSE.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git add LICENSE.txt
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git add readme.txt
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   LICENSE.txt
+        modified:   readme.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    python.txt
+
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git commit -m
+error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified co                                                                                                                mmit
+    --squash <commit>     use autosquash formatted message to squash specified c                                                                                                                ommit
+    --reset-author        the commit is authored by me now (used with -C/-c/--am                                                                                                                end)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no.                                                                                                                 (Default: all)
+
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git commit -m "understand how stage works"
+[master 17132ec] understand how stage works
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 LICENSE.txt
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ cat readme.txt
+Git is a distributed version control system.
+Git is free software.
+Git has a mutable index called stage.
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ cat readme.txt
+Git is a distributed version control system.
+Git is free software.
+Git has a mutable index called stage.
+Git tracks changes.
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git add readme.txt
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   readme.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    python.txt
+
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ cat readme.txt
+Git is a distributed version control system.
+Git is free software.
+Git has a mutable index called stage.
+Git tracks changes of files.
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git commit -m "git tracks changes"
+[master f2144ff] git tracks changes
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    python.txt
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git deff HEAD -- readme.txt
+git: 'deff' is not a git command. See 'git --help'.
+
+The most similar command is
+        diff
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git diff HEAD -- readme.txt
+diff --git a/readme.txt b/readme.txt
+index b71f626..d9368d7 100644
+--- a/readme.txt
++++ b/readme.txt
+@@ -1,4 +1,4 @@
+ Git is a distributed version control system.
+ Git is free software.
+ Git has a mutable index called stage.
+-Git tracks changes.
+\ No newline at end of file
++Git tracks changes of files.
+\ No newline at end of file
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ cat readme.txt
+Git is a distributed version control system.
+Git is free software.
+Git has a mutable index called stage.
+Git tracks changes of files.
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    python.txt
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ cat readme.txt
+Git is a distributed version control system.
+Git is free software.
+Git has a mutable index called stage.
+Git tracks changes of files.
+My stupid boss still prefers SVN.
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    python.txt
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git checkout -- readme.txt
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ cat readme.txt
+Git is a distributed version control system.
+Git is free software.
+Git has a mutable index called stage.
+Git tracks changes.
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git add readme.txt
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ cat readme.txt
+Git is a distributed version control system.
+Git is free software.
+Git has a mutable index called stage.
+Git tracks changes.
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git stutaa
+git: 'stutaa' is not a git command. See 'git --help'.
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git stutas
+git: 'stutas' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    python.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git reset HEAD readme.txt
+Unstaged changes after reset:
+D       python.txt
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    python.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ cat readme.txt
+Git is a distributed version control system.
+Git is free software.
+Git has a mutable index called stage.
+Git tracks changes.
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git add hello.txt
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git commit -m "add hello.txt"
+On branch master
+Changes not staged for commit:
+        deleted:    python.txt
+
+no changes added to commit
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ rm hello.txt
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    hello.txt
+        deleted:    python.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git rm hello.txt
+rm 'hello.txt'
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git commit -m "remove hello.txt"
+[master 8a78e37] remove hello.txt
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 hello.txt
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git checkout -- hello.txt
+error: pathspec 'hello.txt' did not match any file(s) known to git.
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ ssh-keygen -t rsa -C "jiaxingseng_wzz@sina.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):
+Created directory '/c/Users/Administrator/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Administrator/.ssh/id_rsa.
+Your public key has been saved in /c/Users/Administrator/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:W/gvKwkJyRg8/04gmCvr5/VBIlROJhqZn6K5QzEQOsI jiaxingseng_wzz@sina.com
+The key's randomart image is:
++---[RSA 2048]----+
+|.+o. +           |
+|+o* *            |
+|=E.B.o           |
+|+=+o*    .       |
+|.o+o = oS .      |
+|=.  . B  +       |
+|oo   + o...      |
+|+  .. o + ..     |
+|.oo.   . ..o.    |
++----[SHA256]-----+
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git remote add origin git@github.com:michaelliao/kuma258/learngit.git
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git push -u origin master
+The authenticity of host 'github.com (13.250.177.223)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,13.250.177.223' (RSA) to the list of kno                                                                                                                 wn hosts.
+fatal: remote error:
+  michaelliao/kuma258/learngit is not a valid repository name
+  Email support@github.com for help
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git remote add origin git@github.com:kuma258/learngit.git
+fatal: remote origin already exists.
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ ^C
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git remote rm origin
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git remote add origin git@github.com:kuma258/learngit.git
+
+Administrator@BWU2Q7MZVD56G6V MINGW64 ~/learngit (master)
+$ git push -u origin master
+Warning: Permanently added the RSA host key for IP address '13.229.188.59' to t                                                                                                                 he list of known hosts.
+Counting objects: 18, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (18/18), 1.47 KiB | 376.00 KiB/s, done.
+Total 18 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), done.
+To github.com:kuma258/learngit.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
